@@ -12,180 +12,111 @@ body {
 }
 
 .wrapper {
-  width: 94%;
+  width: 100%;
   padding: 3%;
 }
 
 .tower-container {
-  width: 43%;
+  max-width: 45%;
   margin: 0 auto;
   position: relative;
   cursor: url(images/wand_cursor.png), auto;
-  z-index: 10;
 }
 
 .tower-container img {
   border-radius: 10px;
   border: 10px outset #FAF3F3;
+  width: 100%;
+  min-width: 600px;
+  position: relative;
+  
 }
 
 .tower-section {
   position: absolute;
 }
 
+.fast {
+  background: cyan;
+}
+
+.slow {
+  background: palegoldenrod;
+}
+
+span {
+  background: blue;
+}
+
 div.tower-top-grid {
   height: 191px;
-  top: 50px;
-  left: 199px;
-  width: 30px;
+  top: 67px;
+  left: 193px;
+  width: 41px;
 }
 
 div.tower-middle-grid {
-  height: 153px;
-  width: 49px;
-  top: 241px;
-  left: 185px;
+  height: 116px;
+  width: 44px;
+  top: 238px;
+  left: 181px;
 }
 
-.left-leg-upper {
-  height: 111px;
-  width: 30px;
-  left: 156px;
-  bottom: 380px;
-}
-
-.belly {
-  height: 48px;
-  width: 54px;
-  left: 183px;
-  bottom: 514px;
-}
-
-.hips {
-  height: 45px;
-  width: 170px;
-  left: 105px;
-  bottom: 394px;
-}
-
-.right-leg-upper {
-  height: 111px;
-  width: 30px;
-  left: 226px;
-  bottom: 400px;
-}
-
-.left-leg-lower {
-  height: 70px;
-  width: 60px;
-  left: 80px;
-  bottom: 320px;
-}
+div.tower-lower-grid {
+  height: 116px;
+  width: 64px;
+  top: 325px;
+  left: 172px;}
 
 
-.right-leg-lower {
-  height: 50px;
-  width: 30px;
-  left: 260px;
-  bottom: 340px;
-}
+  .tower-container span {
+    height: 3px;
+    width: 3px;
+    margin: 4px;
+    float: left;
+    border-radius: 50%;
+    display: none;
+  }
 
-.filler-tl {
-  height: 30px;
-  width: 15px;
-  left: 190px;
-  top: 210px;
-}
-.filler-ml {
-  height: 60px;
-  width: 12px;
-  left: 176px;
-  top: 334px;
-}
-.filler-bl-1 {
-  height: 50px;
-  width: 19px;
-  left: 140px;
-  top: 461px;
-}
-.filler-bl-2 {
-  height: 40px;
-  width: 20px;
-  left: 60px;
-  bottom: 310px;
-}
+  .fa {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 500;
+    cursor: pointer;
+  }
 
-.tower-container span {
-  height: 3px;
-  width: 3px;
-  margin: 4px;
-  float: left;
-  border-radius: 50%;
-  /*background: goldenrod;*/
-}
+  .chain {
+    width: 3px;
+    position: absolute;
+    top: 73px;
+    left: 39px;
+    z-index: 500;
+  }
 
-.fa {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  z-index: 500;
-  cursor: pointer;
-}
+  .chain div {
+    height: 2px;
+    width: 2px;
+    background: #000;
+    margin: 2px;
+  }
 
-.chain {
-  width: 3px;
-  position: absolute;
-  top: 55px;
-  left: 10px;
-}
+  h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5em;
+    color: white;
+    position: relative;
+    bottom: 180px;
+    left: 80px;
+    margin: 0;
+  }
 
-.chain span {
-  height: 2px;
-  width: 2px;
-  background: #000;
-  margin: 2px;
-}
-
-
-
-.sparkle-sparkle {
-  background: gold;
-  animation: glitter 2.5s linear 0s infinite normal;
-  -webkit-animation: glitter 2.5s linear 0s infinite normal;
-  -moz-animation: glitter 2.5s linear 0s infinite normal;
-}
-
-@-webkit-keyframes glitter {
- 0%   { -webkit-transform: scale(2.0); opacity: 1; }
- 25%  { -webkit-transform: scale(0.75); opacity: 1; }
- 50%  { -webkit-transform: scale(2.0); opacity: 1; }
- 75%  { -webkit-transform: scale(0.75); opacity: 1; }
- 100% { -webkit-transform: scale(2.0); opacity: 1; }
-}
-@-moz-keyframes glitter {
- 0%   { -moz-transform: scale(1.0); opacity: 1; }
- 25%  { -moz-transform: scale(0.5); opacity: 0; }
- 50%  { -moz-transform: scale(1.0); opacity: 1; }
- 75%  { -moz-transform: scale(0.5); opacity: 0; }
- 100% { -moz-transform: scale(1.0); opacity: 1; }
-}
-
-h1{
-  font-family: 'Great Vibes', cursive;
-  font-size: 5em;
-  color: white;
-  position: relative;
-  bottom: 180px;
-  left: 80px;
-  margin: 0;
-}
-
-p {
-  font-size: 1.6em;
-  text-align: center;
-  color: white;
-  position: relative;
-  bottom: 167px;
-  left: 38px;
-  margin: 0;
-}
+  p {
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 167px;
+    left: 38px;
+    margin: 0;
+  }
