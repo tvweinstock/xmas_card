@@ -27,6 +27,7 @@ body {
   border-radius: 10px;
   border: 10px outset papayawhip;
   width: 100%;
+  max-width: 600px;
   position: relative;
   
 }
