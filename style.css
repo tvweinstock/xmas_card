@@ -145,6 +145,25 @@ div.tower-lower-grid {
     }
   }
 
-  @media (max-width: 627px) {
+  @media (max-width: 375px) {
+    .tower-container {
+      min-width: 340px;
+    }
+    div.tower-top-grid {
+      height: 191px;
+      top: 49px;
+      left: 112px;
+      width: 20px;
+    }
 
+    div.tower-middle-grid {
+      display: none;
+    }
+    .tower-container span {
+      margin: 2px;
+    }
+    h1 {
+      left: 29px;
+      font-size: 3em;
+    }
   }
