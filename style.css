@@ -17,17 +17,16 @@ body {
 }
 
 .tower-container {
-  max-width: 45%;
-  margin: 0 auto;
+  max-width: 50%;
+  min-width: 600px;
+  margin: 20px auto;
   position: relative;
-  cursor: url(images/wand_cursor.png), auto;
 }
 
 .tower-container img {
   border-radius: 10px;
-  border: 10px outset #FAF3F3;
+  border: 10px outset papayawhip;
   width: 100%;
-  min-width: 600px;
   position: relative;
   
 }
@@ -119,4 +118,33 @@ div.tower-lower-grid {
     bottom: 167px;
     left: 38px;
     margin: 0;
+  }
+
+  @media (max-width: 778px) {
+    .tower-container {
+      min-width: 500px;
+      margin: 0 auto;
+    }
+
+    div.tower-top-grid {
+      left: 158px;
+    }
+    
+    div.tower-middle-grid {
+      top: 239px;
+      left: 146px;
+    }
+    div.tower-lower-grid {
+      display: none;
+    }
+
+    h1 {
+      bottom: 110px;
+      left: 56px;
+      font-size: 4em;
+    }
+  }
+
+  @media (max-width: 627px) {
+
   }
